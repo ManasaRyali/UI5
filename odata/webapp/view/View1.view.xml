@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.incture.odata.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+          <List id="list1" items="{lclMdl>/Categories         }">
+            <items>
+              <StandardListItem id="stndLst1" description="{Description}" title="{CategoryName}"></StandardListItem>
+            </items> 
+          </List>
+    </Page>
+</mvc:View>

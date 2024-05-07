@@ -1,0 +1,85 @@
+<mvc:View controllerName="com.incture.project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="This is the  1st view">
+        <content>
+         <Panel id="panel" headerText="Employee Information">
+          <l:Grid id="grid">
+            <l:content>
+                <Label id="label1" text="Employee Id">
+                   <layoutData>
+                      <l:GridData id="lgd1" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp1">
+                    <layoutData>
+                      <l:GridData id="inpgd1" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+                <Label id="label2" text="Employee Name">
+                   <layoutData>
+                      <l:GridData id="lgd2" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp2">
+                    <layoutData>
+                      <l:GridData id="inpgd2" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+                <Label id="label3" text="Employee Designation">
+                   <layoutData>
+                      <l:GridData id="lgd3" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp3">
+                    <layoutData>
+                      <l:GridData id="inpgd3" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+                <Label id="label4" text="Employee Skill">
+                   <layoutData>
+                      <l:GridData id="lgd4" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp4">
+                    <layoutData>
+                      <l:GridData id="inpgd4" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+                <Label id="label5" text="Employee Email">
+                   <layoutData>
+                      <l:GridData id="lgd5" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp5">
+                    <layoutData>
+                      <l:GridData id="inpgd5" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+                <Label id="label6" text="Employee Phone">
+                   <layoutData>
+                      <l:GridData id="lgd6" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Label>
+                <Input id="inp6">
+                    <layoutData>
+                      <l:GridData id="inpgd6" span="L6 M6"></l:GridData>
+                   </layoutData>
+                </Input>
+            </l:content>
+         </l:Grid>
+         </Panel>
+         
+        </content>
+        <footer>
+         <Bar id="bar">
+          <contentRight>
+               <Button id="idBtnSub" text="Submit" press="OnSubmit" type="Emphasized"></Button>
+           </contentRight>
+         </Bar>
+         </footer>
+    </Page>
+</mvc:View>
+

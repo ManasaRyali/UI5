@@ -1,0 +1,44 @@
+<mvc:View controllerName="com.incture.jsonmodel.controller.View2"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Iam second View" showNavButton="true" navButtonPress="onBack">
+       <content>
+        <ObjectHeader id="objectheader" title="{empname}" number="{empid}" numberUnit="{empdesig}">
+           <attributes >
+              <ObjectAttribute id="objattr1" title="skill" text="{empskill}"></ObjectAttribute>
+              <ObjectAttribute id="objattr2" title="Email" text="{empemail}"></ObjectAttribute>
+          </attributes>
+           <statuses>
+               <ObjectStatus id="objstatus" title="location" text="{emploc}"></ObjectStatus>
+           </statuses>
+        </ObjectHeader>
+         <IconTabBar id="icontabbar" >
+           <items>
+              <IconTabFilter id="icontabfilter"  icon="sap-icon://hint" >
+                <f:SimpleForm id="smpform" title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3"
+        labelSpanM="3" emptySpanL="4" emptySpanM="4">
+           <f:content>
+         <Label id="lbl1" text="Employee id" required="true"></Label>
+         <Text id="idTxtEmpId" text="{empid}" ></Text>
+         <Label id="lbl" text="Employee name" required="true"></Label>
+         <Text id="idTxtEmpName" text="{empname}" ></Text>
+         <Label id="lbl2" text="Employee designation" required="true"></Label>
+         <Text id="idTxtEmpDesig" text="{empdesig}" ></Text>
+         <Label id="lbl3" text="Employee skill" required="true"></Label>
+         <Text id="idTxtEmpSkill" text="{empskill}" ></Text>
+         <Label id="lbl4" text="Employee email" required="true"></Label>
+         <Text id="idTxtEmpEmail" text="{empemail}" ></Text>
+         <Label id="lbl5" text="Employee location" required="true"></Label>
+         <Text id="idTxtEmpLoc" text="{emploc}" ></Text>
+           </f:content>
+         </f:SimpleForm>
+              </IconTabFilter>
+           </items>
+         </IconTabBar>
+         
+       </content>
+    </Page>
+</mvc:View>

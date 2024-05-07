@@ -1,0 +1,79 @@
+{
+    "empid":"",
+    "empname":"",
+    "empdesig":"",
+    "empskill":"",
+    "empemail":"",
+    "empphone":"",
+    "aRelations":[{
+        "relation": "Mother"
+    },{
+        "relation": "Father"
+    },{
+        "relation": "Brother"
+    },{
+        "relation": "Sister"
+    },{
+        "relation": "Uncle"
+    },{
+        "relation": "Aunty"
+    }
+    ],
+     "aLanguages":[{
+        "language":"English"
+     },{
+        "language":"Hindi"
+     },{
+        "language":"Telugu"
+     },{
+        "language":"French"
+     },{
+        "language":"Germany"
+     
+     }],
+     "aGender":[{
+        "gender":"Male"
+     },{
+        "gender":"Female"
+     },{
+        "gender":"Neutral"
+     
+     }],
+     "aEmployees" :[{
+        "empid":"INCEK0003",
+        "empname": "Manasa",
+        "empdesig":"Associative software",
+        "empskill": "Ui5",
+        "empemail":"Manasa@gmail.com",
+        "emploc": "Andrapradesh"
+     },{
+      "empid":"INCEK0006",
+      "empname": "Manisha",
+      "empdesig":"Admin",
+      "empskill": "Management",
+      "empemail":"Manisha@gmail.com",
+      "emploc": "Bihar"
+   },{
+      "empid":"INCEK0023",
+      "empname": "Anand",
+      "empdesig":"Manager",
+      "empskill": "ABAP",
+      "empemail":"Anand@gmail.com",
+      "emploc": "Chandigarh"
+   },{
+      "empid":"INCEK0047",
+      "empname": "Atmaram",
+      "empdesig":"Admin",
+      "empskill": "Management control",
+      "empemail":"Atmaram@gmail.com",
+      "emploc": "Bhubaneshwar"
+   },{
+      "empid":"INCEK0009",
+      "empname": "Akira",
+      "empdesig":"Lead software head",
+      "empskill": "SAP, Spring boot",
+      "empemail":"Akira@gmail.com",
+      "emploc": "Himachal pradesh"
+   }
+     ]
+}

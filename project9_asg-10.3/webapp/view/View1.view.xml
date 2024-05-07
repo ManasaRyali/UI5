@@ -1,0 +1,15 @@
+<mvc:View controllerName="com.incture.project9asg10.3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Invoices">
+     <content>
+            <List id="invoiceList"/>
+ </content>
+    </Page>
+</mvc:View>
+
+   
+       
+       
+    
+

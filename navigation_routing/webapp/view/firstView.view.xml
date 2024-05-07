@@ -1,0 +1,8 @@
+<mvc:View controllerName="com.inctu.navigationrouting.controller.firstView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Button id="btn1" text="Submit" type="Emphasized"></Button>
+        <content />
+    </Page>
+</mvc:View>

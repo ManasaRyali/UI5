@@ -1,0 +1,50 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+  <Dialog id="dialogue" title="Select an Employee">
+     <Table id="idListEmp" items="{/aEmployees}" headerText="Incture Employees List" mode="SingleSelectMaster" selectionChange="onSelEmpFromF4Help">
+        <headerToolbar>
+         <Toolbar id="toolbar" >
+           <Text id="text" text="Incture Employees List" class="sapMH3FontSize"></Text>
+           <ToolbarSpacer id="spacer"></ToolbarSpacer>
+           <SearchField id="srchfield" width="15%" liveChange="onSearchEmp"></SearchField>
+           <Button id="btn1" icon="sap-icon://sort-ascending" press="sortAsc"></Button>
+           <Button id="btn2" icon="sap-icon://sort-descending" press="sortDesc"></Button>
+         </Toolbar>
+        </headerToolbar>
+          <columns>
+              <Column id="column1" >
+                <Text id="idTxt1" text="Employee ID"></Text>
+              </Column>
+              <Column id="column2" >
+                <Text id="idTxt2" text="Employee Name"></Text>
+              </Column>
+              <Column id="column3" >
+                <Text id="idTxt3" text="Employee Designation"></Text>
+              </Column>
+              <Column id="column4" >
+                <Text id="idTxt4" text="Employee skill"></Text>
+              </Column>
+              <Column id="column5" >
+                <Text id="idTxt5" text="Employee Email"></Text>
+              </Column>
+              <Column id="column6" >
+                <Text id="idTxt6" text="Employee Location"></Text>
+              </Column>
+          </columns>
+             <items>
+               <ColumnListItem id="clmnlistitem" >
+                 <cells>
+                  <Text id="idTxt.1" text="{empid}"></Text>
+                  <Text id="idTxt.2" text="{empname}"></Text>
+                  <Text id="idTxt.3" text="{empdesig}"></Text>
+                  <Text id="idTxt.4" text="{empskill}"></Text>
+                  <Text id="idTxt.5" text="{empemail}"></Text>
+                  <Text id="idTxt.6" text="{emploc}"></Text>
+                 </cells>
+               </ColumnListItem>
+             </items>
+          </Table>
+          <endButton>
+           <Button id="btn" text="Close" press="onClose"></Button>
+          </endButton>
+  </Dialog>
+</core:FragmentDefinition>

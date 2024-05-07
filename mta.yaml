@@ -1,0 +1,167 @@
+_schema-version: "3.2"
+ID: Assigment
+version: 0.0.1
+modules:
+- name: Assigment-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: Assigment-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - cominctureproject2.zip
+      name: cominctureproject2
+      target-path: resources/
+    - artifacts:
+      - cominctureproject3.zip
+      name: cominctureproject3
+      target-path: resources/
+    - artifacts:
+      - cominctureproject4.zip
+      name: cominctureproject4
+      target-path: resources/
+    - artifacts:
+      - cominctureproject6.zip
+      name: cominctureproject6
+      target-path: resources/
+    - artifacts:
+      - cominctureproject7.zip
+      name: cominctureproject7
+      target-path: resources/
+    - artifacts:
+      - comincturproject8.zip
+      name: comincturproject8
+      target-path: resources/
+    - artifacts:
+      - cominctureproject9asg103.zip
+      name: cominctureproject9asg103
+      target-path: resources/
+    - artifacts:
+      - comincturejsonmodel.zip
+      name: comincturejsonmodel
+      target-path: resources/
+    - artifacts:
+      - cominctunavigationrouting.zip
+      name: cominctunavigationrouting
+      target-path: resources/
+- name: cominctureproject2
+  type: html5
+  path: project2
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctureproject3
+  type: html5
+  path: project3
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctureproject4
+  type: html5
+  path: project4
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctureproject6
+  type: html5
+  path: project6
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctureproject7
+  type: html5
+  path: project7
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: comincturproject8
+  type: html5
+  path: project8
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctureproject9asg103
+  type: html5
+  path: project9_asg-10.3
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: comincturejsonmodel
+  type: html5
+  path: json_model
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: cominctunavigationrouting
+  type: html5
+  path: navigation_routing
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: Assigment-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: Assigment-html5-srv
+    service-plan: app-host
+- name: Assigment-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: false
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: Assigment-destination-service
+    service-plan: lite
+parameters:
+  deploy_mode: html5-repo

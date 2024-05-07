@@ -1,0 +1,15 @@
+<mvc:View controllerName="com.incture.project2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <Page id="page" title="This is the  2nd view">
+        <content>
+        </content>
+        <footer>
+         <Bar id="bar">
+          <contentRight>
+               <Button id="idBtnSub" text="Back" press="OnSubmit" type="Emphasized"></Button>
+           </contentRight>
+         </Bar>
+         </footer>
+    </Page>
+</mvc:View>
